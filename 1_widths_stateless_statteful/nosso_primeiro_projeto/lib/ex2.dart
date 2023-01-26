@@ -107,7 +107,7 @@ class _TaskState extends State<Task> {
                       padding: const EdgeInsets.all(12.0),
                       child: Text(
                         'Nível :$nivel'
-                            '',
+                        '',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       ),
                     ),
@@ -121,3 +121,84 @@ class _TaskState extends State<Task> {
     );
   }
 }
+
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Flutter Demo',
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//       ),
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: Text('Flutter: Primeiros Passos'),
+//         ),
+//         body: ListView(
+//           children: [
+//             RowQuadrados(
+//               cor1: Colors.cyanAccent,
+//               cor2: Colors.blue,
+//               cor3: Colors.yellow,
+//             ),
+//             RowQuadrados(
+//               cor1: Colors.grey,
+//               cor2: Colors.cyan,
+//               cor3: Colors.green,
+//             ),
+//             RowQuadrados(
+//                 cor1: Colors.purple,
+//                 cor2: Colors.lightGreenAccent,
+//                 cor3: Colors.pinkAccent)
+//           ],
+//         ),
+//         floatingActionButton: FloatingActionButton(onPressed: () {}),
+//       ),
+//     );
+//   }
+// }
+//
+// class RowQuadrados extends StatelessWidget {
+//   final Color cor1;
+//   final Color cor2;
+//   final Color cor3;
+//
+//   const RowQuadrados(
+//       {Key? key, required this.cor1, required this.cor2, required this.cor3})
+//       : super(key: key);
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Padding(
+//       padding: const EdgeInsets.all(8.0),
+//       child: Container(
+//         child: Row(
+//           children: [
+//             Retangulo(cor1),
+//             Retangulo(cor2),
+//             Retangulo(cor3),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+//
+// class Retangulo extends StatelessWidget {
+//   final Color cor;
+//
+//   const Retangulo(this.cor, {Key? key}) : super(key: key);
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       width: 100,
+//       height: 140,
+//       color: cor,
+//     );
+//   }
+// }
