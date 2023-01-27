@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           children: [
             Task('Aprender Flutter no café da manhã comento sucrilhos '),
             Task('Meditar'),
-            Task('Meditar'),
+            Task('Ler'),
             Task('Meditar'),
             Task('Meditar'),
             Task('Andar de bike'),
@@ -79,14 +79,28 @@ class _TaskState extends State<Task> {
                             style: TextStyle(
                                 fontSize: 24, overflow: TextOverflow.ellipsis),
                           )),
-                      ElevatedButton(
-                          onPressed: () {
-                            setState(() {
-                              nivel++;
-                            });
-                            print(nivel);
-                          },
-                          child: Icon(Icons.arrow_drop_up))
+                      Container(height: 52,width: 52,
+                        child: ElevatedButton(
+                            onPressed: () {
+                              setState(() {
+                                nivel++;
+                              });
+                              print(nivel);
+                            },
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Icon(Icons.arrow_drop_up),
+                                Text(
+                                  'UP',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                  ),
+                                ),
+                              ],
+                            )),
+                      )
                     ],
                   ),
                 ),
@@ -107,7 +121,7 @@ class _TaskState extends State<Task> {
                       padding: const EdgeInsets.all(12.0),
                       child: Text(
                         'Nível :$nivel'
-                            '',
+                        '',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       ),
                     ),
