@@ -23,9 +23,11 @@ class MyApp extends StatelessWidget {
           children: [
             Task('Aprender Flutter',
                 'https://pbs.twimg.com/media/Eu7m692XIAEvxxP?format=png&name=large'),
-            Task('Meditar', 'https://manhattanmentalhealthcounseling.com/wp'
-                '-content/uploads/2019/06/Top-5-Scientific-Findings-on-'
-                'MeditationMindfulness-881x710.jpeg'),
+            Task(
+                'Meditar',
+                'https://manhattanmentalhealthcounseling.com/wp'
+                    '-content/uploads/2019/06/Top-5-Scientific-Findings-on-'
+                    'MeditationMindfulness-881x710.jpeg'),
             Task(
                 'Ler',
                 'https://thebogotapost.com/wp-content/uploads/'
@@ -34,7 +36,8 @@ class MyApp extends StatelessWidget {
                 'Andar de bike',
                 'https://tswbike.com/wp-content/uploads/2020/09/108034687'
                     '_626160478000800_2490880540739582681_n-e1600200953343.jpg'),
-            Task('Jogar', 'https://i.ibb.co/tB29PZB/kako-epifania-2022-2-c-pia.jpg'),
+            Task('Jogar',
+                'https://i.ibb.co/tB29PZB/kako-epifania-2022-2-c-pia.jpg'),
           ],
         ),
         floatingActionButton: FloatingActionButton(onPressed: () {}),
@@ -84,13 +87,49 @@ class _TaskState extends State<Task> {
                           fit: BoxFit.cover,
                         ),
                       ),
-                      Container(
-                          width: 200,
-                          child: Text(
-                            widget.nome,
-                            style: TextStyle(
-                                fontSize: 24, overflow: TextOverflow.ellipsis),
-                          )),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                              width: 200,
+                              child: Text(
+                                widget.nome,
+                                style: TextStyle(
+                                    fontSize: 24,
+                                    overflow: TextOverflow.ellipsis),
+                              )),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.star,
+                                size: 15,
+                                color: Colors.blue,
+                              ),
+                              Icon(
+                                Icons.star,
+                                size: 15,
+                                color: Colors.blue,
+                              ),
+                              Icon(
+                                Icons.star,
+                                size: 15,
+                                color: Colors.blue,
+                              ),
+                              Icon(
+                                Icons.star,
+                                size: 15,
+                                color: Colors.blue[100],
+                              ),
+                              Icon(
+                                Icons.star,
+                                size: 15,
+                                color: Colors.blue[100],
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
                       Container(
                         height: 52,
                         width: 52,
