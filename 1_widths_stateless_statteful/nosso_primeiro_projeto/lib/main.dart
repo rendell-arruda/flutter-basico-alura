@@ -21,16 +21,20 @@ class MyApp extends StatelessWidget {
         ),
         body: ListView(
           children: [
+            Task('Aprender Flutter',
+                'https://pbs.twimg.com/media/Eu7m692XIAEvxxP?format=png&name=large'),
+            Task('Meditar', 'https://manhattanmentalhealthcounseling.com/wp'
+                '-content/uploads/2019/06/Top-5-Scientific-Findings-on-'
+                'MeditationMindfulness-881x710.jpeg'),
             Task(
-                'Aprender Flutter',
-                'https://imgs.search.brave.com/u_EApJWCpD-'
-                    'Ga3MMsUf1m1o02p2HCY6zDS6UzlozKc8/rs:fit:431:225:1/g:ce/aHR0cHM'
-                    '6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5S/a0pNeUo1TFB3cjZE/R'
-                    'UowaUUzRGR3SGFJ/SiZwaWQ9QXBp'),
-            Task('Meditar', ''),
-            Task('Ler', ''),
-            Task('Andar de bike', ''),
-            Task('Meditar', ''),
+                'Ler',
+                'https://thebogotapost.com/wp-content/uploads/'
+                    '2017/06/636052464065850579-137719760_flyer-image-1.jpg'),
+            Task(
+                'Andar de bike',
+                'https://tswbike.com/wp-content/uploads/2020/09/108034687'
+                    '_626160478000800_2490880540739582681_n-e1600200953343.jpg'),
+            Task('Jogar', 'https://i.ibb.co/tB29PZB/kako-epifania-2022-2-c-pia.jpg'),
           ],
         ),
         floatingActionButton: FloatingActionButton(onPressed: () {}),
