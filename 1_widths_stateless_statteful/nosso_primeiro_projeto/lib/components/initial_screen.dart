@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:nosso_primeiro_projeto/task.dart';
+import 'package:nosso_primeiro_projeto/components/task.dart';
 
 
+// ignore: camel_case_types
 class initialScreen extends StatefulWidget {
   const initialScreen({Key? key}) : super(key: key);
 
@@ -9,19 +10,20 @@ class initialScreen extends StatefulWidget {
   State<initialScreen> createState() => _initialScreenState();
 }
 
+// ignore: camel_case_types
 class _initialScreenState extends State<initialScreen> {
   bool opacidade = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tarefas'),
+        title: const Text('Tarefas'),
       ),
       body: AnimatedOpacity(
         opacity: opacidade ? 1 : 0,
-        duration: Duration(milliseconds: 800),
+        duration: const Duration(milliseconds: 800),
         child: ListView(
-          children: [
+          children: const [
             Task(
                 'Aprender Flutter',
                 'https://pbs.twimg.com/media/Eu7m692XIAEvxxP?format=png&name=large',
@@ -53,7 +55,7 @@ class _initialScreenState extends State<initialScreen> {
             opacidade = !opacidade;
           });
         },
-        child: Icon(Icons.remove_red_eye),
+        child: const Icon(Icons.remove_red_eye),
       ),
     );
   }

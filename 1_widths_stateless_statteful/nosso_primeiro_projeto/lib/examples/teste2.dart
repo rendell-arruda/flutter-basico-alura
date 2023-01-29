@@ -17,14 +17,12 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Geeks for geeks'),
+          title: const Text('Geeks for geeks'),
         ),
-        body: Container(
-          child: ListView(
-            children: [
+        body: ListView(
+          children: const [
 
-            ],
-          ),
+          ],
         ),
         floatingActionButton: FloatingActionButton(onPressed: () {}),
       ),

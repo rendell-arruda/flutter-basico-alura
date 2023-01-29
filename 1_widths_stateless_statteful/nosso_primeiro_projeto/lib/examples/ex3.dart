@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Flutter: Primeiros Passos'),
+          title: const Text('Flutter: Primeiros Passos'),
         ),
         body: ListView(
-          children: [
+          children: const [
             RowQuadrados(
                 altura: 100,
                 largura: 100,
@@ -72,31 +72,29 @@ class RowQuadrados extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Container(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Container(
-              width: largura,
-              height: altura,
-              decoration: BoxDecoration(
-                  color: cor1, borderRadius: BorderRadius.circular(5)),
-            ),
-            Container(
-              width: largura,
-              height: altura,
-              decoration: BoxDecoration(
-                  color: cor2, borderRadius: BorderRadius.circular(5)),
-              child: Icon(icone),
-            ),
-            Container(
-              width: altura,
-              height: largura,
-              decoration: BoxDecoration(
-                  color: cor3, borderRadius: BorderRadius.circular(5)),
-            ),
-          ],
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Container(
+            width: largura,
+            height: altura,
+            decoration: BoxDecoration(
+                color: cor1, borderRadius: BorderRadius.circular(5)),
+          ),
+          Container(
+            width: largura,
+            height: altura,
+            decoration: BoxDecoration(
+                color: cor2, borderRadius: BorderRadius.circular(5)),
+            child: Icon(icone),
+          ),
+          Container(
+            width: altura,
+            height: largura,
+            decoration: BoxDecoration(
+                color: cor3, borderRadius: BorderRadius.circular(5)),
+          ),
+        ],
       ),
     );
   }
