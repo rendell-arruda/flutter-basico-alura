@@ -200,7 +200,7 @@ class _TaskState extends State<Task> {
                       padding: const EdgeInsets.all(12.0),
                       child: Text(
                         'Nível :$nivel'
-                        '',
+                            '',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       ),
                     ),
