@@ -74,24 +74,31 @@ class _TaskState extends State<Task> {
         child: Stack(
           children: [
             Container(
-              color: Colors.blue,
+              decoration: BoxDecoration(
+                  color: Colors.blue, borderRadius: BorderRadius.circular(5)),
               height: 140,
             ),
             Column(
               children: [
                 Container(
-                  color: Colors.white,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(5)),
                   height: 100,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
-                        color: Colors.black26,
+                        decoration: BoxDecoration(
+                            color: Colors.black26,
+                            borderRadius: BorderRadius.circular(5)),
                         width: 72,
                         height: 100,
-                        child: Image.network(
-                          widget.foto,
-                          fit: BoxFit.cover,
+                        child: ClipRRect(borderRadius: BorderRadius.circular(5),
+                          child: Image.network(
+                            widget.foto,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                       Column(
