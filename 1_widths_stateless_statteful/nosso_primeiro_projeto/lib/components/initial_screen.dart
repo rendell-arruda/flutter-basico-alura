@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nosso_primeiro_projeto/components/task.dart';
 
-
 // ignore: camel_case_types
 class initialScreen extends StatefulWidget {
   const initialScreen({Key? key}) : super(key: key);
@@ -13,6 +12,7 @@ class initialScreen extends StatefulWidget {
 // ignore: camel_case_types
 class _initialScreenState extends State<initialScreen> {
   bool opacidade = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,26 +26,25 @@ class _initialScreenState extends State<initialScreen> {
           children: const [
             Task(
                 'Aprender Flutter',
-                'https://pbs.twimg.com/media/Eu7m692XIAEvxxP?format=png&name=large',
+                'assets/images/dash.png',
                 3),
             Task(
                 'Meditar',
-                'https://manhattanmentalhealthcounseling.com/wp'
-                    '-content/uploads/2019/06/Top-5-Scientific-Findings-on-'
-                    'MeditationMindfulness-881x710.jpeg',
+                'assets/images/meditar.jpeg',
                 5),
             Task(
                 'Ler',
-                'https://thebogotapost.com/wp-content/uploads/'
-                    '2017/06/636052464065850579-137719760_flyer-image-1.jpg',
+                'assets/images/livro.jpg',
                 4),
             Task(
                 'Andar de bike',
-                'https://tswbike.com/wp-content/uploads/2020/09/108034687'
-                    '_626160478000800_2490880540739582681_n-e1600200953343.jpg',
+                'assets/images/bike.webp',
                 1),
             Task('Jogar',
-                'https://i.ibb.co/tB29PZB/kako-epifania-2022-2-c-pia.jpg', 3),
+                'assets/images/jogar.jpg', 3),
+            SizedBox(
+              height: 70,
+            )
           ],
         ),
       ),
@@ -60,4 +59,3 @@ class _initialScreenState extends State<initialScreen> {
     );
   }
 }
-
