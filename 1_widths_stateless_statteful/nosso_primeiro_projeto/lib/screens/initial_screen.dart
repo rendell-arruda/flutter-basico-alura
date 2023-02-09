@@ -24,24 +24,11 @@ class _initialScreenState extends State<initialScreen> {
         duration: const Duration(milliseconds: 800),
         child: ListView(
           children: const [
-            Task(
-                'Aprender Flutter',
-                'assets/images/dash.png',
-                3),
-            Task(
-                'Meditar',
-                'assets/images/meditar.jpeg',
-                5),
-            Task(
-                'Ler',
-                'assets/images/livro.jpg',
-                4),
-            Task(
-                'Andar de bike',
-                'assets/images/bike.webp',
-                1),
-            Task('Jogar',
-                'assets/images/jogar.jpg', 3),
+            Task('Aprender Flutter', 'assets/images/dash.png', 3),
+            Task('Meditar', 'assets/images/meditar.jpeg', 5),
+            Task('Ler', 'assets/images/livro.jpg', 4),
+            Task('Andar de bike', 'assets/images/bike.webp', 1),
+            Task('Jogar', 'assets/images/jogar.jpg', 3),
             SizedBox(
               height: 70,
             )
