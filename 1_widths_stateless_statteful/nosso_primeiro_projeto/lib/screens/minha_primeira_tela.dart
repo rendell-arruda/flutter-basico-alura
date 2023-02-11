@@ -15,30 +15,30 @@ class MyFirstWidget extends StatelessWidget {
             alignment: AlignmentDirectional.center,
             children: [
               Container(
-                color: Colors.blue,
-                width: 75,
-                height: 75,
+                color: Colors.red,
+                width: 100,
+                height: 100,
               ),
               Container(
-                color: Colors.yellow,
-                width: 37,
-                height: 37,
-              )
+                color: Colors.blue,
+                width: 50,
+                height: 50,
+              ),
             ],
           ),
           Stack(
             alignment: AlignmentDirectional.center,
             children: [
               Container(
-                color: Colors.yellow,
-                width: 75,
-                height: 75,
+                color: Colors.blue,
+                width: 100,
+                height: 100,
               ),
               Container(
-                color: Colors.blue,
-                width: 37,
-                height: 37,
-              )
+                color: Colors.red,
+                width: 50,
+                height: 50,
+              ),
             ],
           ),
           Row(
@@ -47,27 +47,27 @@ class MyFirstWidget extends StatelessWidget {
             children: [
               Container(
                 color: Colors.cyan,
-                width: 50,
                 height: 50,
+                width: 50,
               ),
               Container(
-                color: Colors.pink,
-                width: 50,
+                color: Colors.pinkAccent,
                 height: 50,
+                width: 50,
               ),
               Container(
                 color: Colors.purple,
-                width: 50,
                 height: 50,
+                width: 50,
               )
             ],
           ),
           Container(
             color: Colors.amber,
-            width: 300,
             height: 30,
+            width: 30000,
             child: const Text(
-              'Hello World',
+              'Diamante Amarelo',
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 28,
@@ -77,10 +77,10 @@ class MyFirstWidget extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              // print('Você apertou o botão');
+              // print('Você apertou o Botão');
             },
             child: const Text('Aperte o botão!'),
-          )
+          ),
         ],
       ),
     );

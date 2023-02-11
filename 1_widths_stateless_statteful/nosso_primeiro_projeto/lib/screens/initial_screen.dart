@@ -1,22 +1,23 @@
+
 import 'package:flutter/material.dart';
 import 'package:nosso_primeiro_projeto/components/task.dart';
 
-// ignore: camel_case_types
-class initialScreen extends StatefulWidget {
-  const initialScreen({Key? key}) : super(key: key);
+class InitialScreen extends StatefulWidget {
+
+  const InitialScreen({Key? key}) : super(key: key);
 
   @override
-  State<initialScreen> createState() => _initialScreenState();
+  State<InitialScreen> createState() => _InitialScreenState();
 }
 
-// ignore: camel_case_types
-class _initialScreenState extends State<initialScreen> {
+class _InitialScreenState extends State<InitialScreen> {
   bool opacidade = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Container(),
         title: const Text('Tarefas'),
       ),
       body: AnimatedOpacity(
@@ -24,14 +25,28 @@ class _initialScreenState extends State<initialScreen> {
         duration: const Duration(milliseconds: 800),
         child: ListView(
           children: const [
-            Task('Aprender Flutter', 'assets/images/dash.png', 3),
-            Task('Meditar', 'assets/images/meditar.jpeg', 5),
-            Task('Ler', 'assets/images/livro.jpg', 4),
-            Task('Andar de bike', 'assets/images/bike.webp', 1),
-            Task('Jogar', 'assets/images/jogar.jpg', 3),
-            SizedBox(
-              height: 70,
-            )
+            Task(
+                'Aprender Flutter',
+                'assets/images/dash.png',
+                3),
+            Task(
+                'Andar de Bike',
+                'assets/images/bike.webp',
+                2),
+            Task(
+                'Meditar',
+                'assets/images/meditar.jpeg',
+                5),
+            Task(
+                'Ler',
+                'assets/images/livro.jpg',
+                4),
+            Task(
+              'Jogar',
+              'assets/images/jogar.jpg',
+              1,
+            ),
+            SizedBox(height: 80,)
           ],
         ),
       ),
