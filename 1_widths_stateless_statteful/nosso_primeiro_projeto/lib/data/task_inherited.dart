@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../components/task.dart';
+import 'package:nosso_primeiro_projeto/components/task.dart';
 
 class TaskInherited extends InheritedWidget {
   TaskInherited({
@@ -16,7 +15,7 @@ class TaskInherited extends InheritedWidget {
     Task('Jogar', 'assets/images/jogar.jpg', 1),
   ];
 
-  void newTask(String name, String photo, int difficulty){
+  void newTask(String name, String photo,int difficulty){
     taskList.add(Task(name, photo, difficulty));
   }
 

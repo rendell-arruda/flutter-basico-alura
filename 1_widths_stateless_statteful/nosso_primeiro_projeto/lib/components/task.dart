@@ -17,7 +17,7 @@ class Task extends StatefulWidget {
 
 class _TaskState extends State<Task> {
 
-  bool assetIrNetwork() {
+  bool assetOrNetwork() {
     if (widget.foto.contains('http')) {
       return false;
     }
@@ -55,7 +55,7 @@ class _TaskState extends State<Task> {
                       height: 100,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(4),
-                        child: assetIrNetwork()
+                        child: assetOrNetwork()
                             ? Image.asset(
                                 widget.foto,
                                 fit: BoxFit.cover,
